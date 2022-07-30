@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Practice</title>
+  
+  <style>
+    .facebook{
+      background-color: rgb(250,250,250);
+      align-items: center;
+      margin-top: 40px;
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-bottom: 3%; 
+    }
+    
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .image{
+       width: 100%;
+       height: 100%; 
+       object-fit: cover;
+       object-position: top;
+       margin-top: 0px;
+       margin-left: 0px;
+       margin-bottom: 0px;
+       padding-left: 0;    
+    }
+    
+    .name{
+      color: black;
+      font-size: 45px;
+      font-weight: bold;
+      margin-top: 8px;
+      margin-bottom: 0;
+      margin-left: 3.5%;
+    }
+    
+    .friends{
+      color: rgb(94,94,94);
+      font-size: 25px;
+      margin-top: 12px;
+      margin-bottom: 15px;
+      margin-left: 3.5%;
+    }
+    
+    .friend{
+      background-color: rgb(10, 102, 194);
+      color: white;
+      border: none;
+      height: 63px;
+      width: 155px;
+      margin-top: 12px;
+      margin-bottom: 0px;
+      margin-left: 3.5%;
+      font-size: 28px;
+      text-align: center; 
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 11a exercise -->
+  <div style="display: grid;
+       grid-template-columns: 680px 243px;
+       margin-top: 30px">
+       
+    <div style="background-color:    #ff1493;  height: 100px; font-size: 50px;" >680px</div>
+    
+    <div style="background-color:  #e0b0ff; height: 100px; font-size: 50px;">243px</div>
+    </div><br><br><br><hr><br><br><br>
+  
+  <!-- 11b exercise -->
+    <div style="display: grid;
+       grid-template-columns: 150px 1fr 243px;">
+       
+    <div style="background-color:  #ff00ff; height: 100px; font-size: 50px;" >Col1</div>
+    
+    <div style="background-color: #00ffff; height: 100px; font-size: 50px;">Col2</div>
+    
+    <div style="background-color: #ff00ff;  height: 100px; font-size: 50px;" >Col3</div>
+</div><br><br><br><hr><br><br><br>
+  
+  <!-- 11c exercise -->
+  <div style="display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       column-gap: 20px;
+       row-gap: 10px;">
+    
+    <div style="background-color: #e0115f; height: 100px; font-size: 50px;" >Col1</div>
+    
+    <div style="background-color: #007fff; height: 100px; font-size: 50px;">Col2</div>
+    
+    <div style="background-color: #e0115f; height: 100px; font-size: 50px;" >Col3</div>
+    
+    <div style="background-color: #007fff; height: 100px; font-size: 50px;">Col4</div>
+    
+    <div style="background-color: #007fff; height: 100px; font-size: 50px;">Col1</div>
+    
+     <div style="background-color: #e0115f; height: 100px; font-size: 50px;" >Col2</div>
+     
+    <div style="background-color: #007fff; height: 100px; font-size: 50px;">Col3</div>
+    
+    <div style="background-color: #e0115f; height: 100px; font-size: 50px;" >Col4</div>
+</div>
+<br><br><br><hr><br><br><br>
+
+  <!-- 11d exercise -->
+<div class="grid">
+  <!-- 1st div -->
+   <div class="facebook">
+     <div class="grid-one">
+        <img src="9781920ff7e0b591700d4ec8c727f978.jpg" class="image" alt="lady on yellow">
+      </div>
+      
+    <p class="name">
+      Sonia Israel
+    </p>
+    
+    <p class="friends">
+      48 mutual friends
+    </p>
+    
+    <button class="friend">
+      Add Friend
+    </button>
+  </div>
+  
+    <!-- 2nd div -->
+  <div class="facebook">
+    <div class="grid-two">
+      <img src="jb54fb3aaf0575264532a8a2fead7cb26.jpg" class="image" alt="lady on white">
+    </div>
+    
+    <p class="name">
+      Monica Lewis 
+    </p>
+    
+    <p class="friends">
+      70 mutual friends
+    </p>
+    
+    <button class="friend">
+      Add Friend
+    </button>
+  </div>
+  
+   <!-- 3rd div -->
+<div class="facebook">
+    <div class="grid-three">
+      <img src="fd26eeb0fceef160ccf955b045366ba8.jpg" class="image" alt="father and son">
+     </div>
+     
+    <p class="name">
+      Adriana Dave 
+    </p>
+    
+    <p class="friends">
+      56 mutual friends
+    </p>
+    
+    <button class="friend">
+      Add Friend
+    </button>
+  </div>
+    </div>
+</body>
+</html>
